@@ -10,7 +10,8 @@ apt-get update && apt-get upgrade -y
 
 
 echo "Installing essential tools: ============================================"
-apt-get install build-essential cmake libxml2 libxml2-dev libxslt1-dev -y
+apt-get install build-essential cmake -y
+apt-get libxml2 libxml2-dev libxslt1-dev -y
 apt-get install zsh tree dtrx ncurses-term aptitude curl sudo htop ppa-purge -y
 apt-get install vim-nox git tmux -y
 
