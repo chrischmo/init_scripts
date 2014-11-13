@@ -9,12 +9,14 @@ done
 
 echo "Installing Powerline: =================================================="
 pip install psutil pyuv i3-py
-pip install git+git://github.com/Lokaltog/powerline
+pip install --user git+git://github.com/Lokaltog/powerline
 
-# TODO (gehört in /etc/zsh/zshrc - ggf. nicht ans Ende??):
-#if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
-#    source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
-#fi
+# Add ~/.local/bin to path
+cat >>$HOME/.zprofile <<EOL
+if [ -d "$HOME/.local/bin" ]; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+EOL
 
 echo "TODO:"
 # echo "Set zsh as default shell with 'csh -s /bin/zsh' (requires password)"
