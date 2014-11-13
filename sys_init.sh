@@ -25,10 +25,16 @@ apt-get install python-dev pylint python-pip -y
 # Dependencies for powerline
 apt-get install socat -y
 
+# TODO: Set up server-specific features (fail2ban, iptables etc.) in another script
+# Good article for ubuntu server on digitalocean.com
+
 
 echo "Setting zsh as default shell: =========================================="
 chsh -s /bin/zsh
 
 echo "========================================================================"
-echo "Finished System Setup Script. Exit & reconnect to continue with 2nd part"
+echo "Finished System Setup Script."
+echo "TODO on hosted server:"
+echo "Change root password with 'passwd' (or switch to PKA)"
+echo "Create regular user and continue with user_init.sh"
 echo "========================================================================"
