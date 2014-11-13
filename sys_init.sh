@@ -22,6 +22,8 @@ apt-get install vcsh myrepos -y
 apt-get install vim-nox git tmux -y
 # Python-specific
 apt-get install python-dev pylint python-pip -y
+# Dependencies for powerline
+apt-get install socat -y
 
 
 echo "Setting zsh as default shell: =========================================="

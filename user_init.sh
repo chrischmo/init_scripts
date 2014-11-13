@@ -8,7 +8,6 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 
 echo "Installing Powerline: =================================================="
-apt-get install socat -y
 pip install psutil pyuv i3-py
 pip install git+git://github.com/Lokaltog/powerline
 
