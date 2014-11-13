@@ -10,18 +10,22 @@ apt-get update && apt-get upgrade -y
 
 
 echo "Installing essential tools: ============================================"
-# Essential build tools
-apt-get install build-essential cmake -y
-# LibXML
-apt-get libxml2 libxml2-dev libxslt1-dev -y
 # Essential utitlies
 apt-get install zsh tree dtrx ncurses-term aptitude curl sudo htop ppa-purge -y
-# Tools for managing dotfiles
-apt-get install vcsh myrepos -y
-# Vim & Version control
-apt-get install vim-nox git tmux -y
+apt-get install vim-nox git tmux ssh-agent -y
+
+# Essential build tools
+apt-get install build-essential cmake -y
+
+# LibXML
+apt-get libxml2 libxml2-dev libxslt1-dev -y
+
 # Python-specific
 apt-get install python-dev pylint python-pip -y
+
+# Tools for managing dotfiles
+apt-get install vcsh myrepos -y
+
 # Dependencies for powerline
 apt-get install socat -y
 
