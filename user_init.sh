@@ -18,6 +18,12 @@ if [ -d "$HOME/.local/bin" ]; then
 fi
 EOL
 
+echo "Setting up vcsh: ==========================================="
+# Clone the myrepos template:
+vcsh clone git://github.com/chrischmo/vcsh_mr_template.git mr
+#TODO: What's next? mr update?
+
+
 echo "TODO:"
 echo "Change root password with 'passwd'"
 echo "Create regular user"
