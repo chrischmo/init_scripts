@@ -20,8 +20,9 @@ EOL
 
 echo "Setting up vcsh: ==========================================="
 # Clone the myrepos template:
-vcsh clone git://github.com/chrischmo/vcsh_mr_template.git mr
-#TODO: What's next? mr update?
+vcsh clone https://github.com/chrischmo/vcsh_mr_template.git mr
+mr update
+vcsh pull
 
 
 echo "TODO:"

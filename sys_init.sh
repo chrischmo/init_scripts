@@ -38,8 +38,9 @@ chsh -s /bin/zsh
 
 echo "========================================================================"
 echo "Finished System Setup Script."
-echo "TODO on hosted server:"
-echo "Change root password with 'passwd' (or switch to PKA)"
+echo "TODO:"
+echo "Switch to PKA"
 echo "Install github public key"
-echo "Create regular user and continue with user_init.sh"
+echo "On Server: Create regular user"
+echo "Continue with user_init.sh"
 echo "========================================================================"
