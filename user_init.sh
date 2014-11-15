@@ -27,17 +27,23 @@ pip install --user git+git://github.com/Lokaltog/powerline
 
 # Add ~/.local/bin to path:
 cat >>$HOME/.zprofile <<EOL
+
+# Powerline requires the path to be extended:
 if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 EOL
+#TODO: Escape variables
 
 # Activate zsh plugin:
 cat >>$HOME/.zshrc <<EOL
+
+# Activate Powerline:
 if [[ -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
     source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
 EOL
+#TODO: Escape variables
 
 
 echo "Setting up vcsh: ==========================================="
