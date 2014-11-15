@@ -26,6 +26,10 @@ echo "Setting up vcsh: ==========================================="
 vcsh clone https://github.com/chrischmo/vcsh_mr_template.git mr
 mr update
 vcsh pull
+# Set remote repo of mr from HTTP to SSH URL (TODO How can I fix this permanently?):
+vcsh mr remote rm origin
+vcsh mr remote add origin git@github.com:chrischmo/vcsh_mr_template.git
+vcsh mr push --set-upstream origin master
 
 
 echo "TODO:"
