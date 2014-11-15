@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+echo "Installing NeoBundle:  ====================================================="
+curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
+
 echo "Installing Prezto: ====================================================="
 git clone --recursive https://github.com/chrischmo/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 setopt EXTENDED_GLOB

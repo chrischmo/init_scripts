@@ -12,7 +12,7 @@ apt-get update && apt-get upgrade -y
 echo "Installing essential tools: ============================================"
 # Essential utitlies
 apt-get install zsh tree dtrx ncurses-term aptitude curl sudo htop ppa-purge -y
-apt-get install vim-nox git tmux ssh-agent -y
+apt-get install vim-nox git tmux -y
 
 # Essential build tools
 apt-get install build-essential cmake -y
